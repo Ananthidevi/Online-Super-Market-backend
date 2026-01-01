@@ -10,7 +10,9 @@ const app = express();
 
 //use middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin : "https://online-supermarket-frontend.netlify.app/" //update form netlify
+}));
 app.use("/api",userRoutes);
 app.use("/auth",authRoutes);
 app.use("/product", productRoutes);
