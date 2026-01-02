@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors({
     origin : ["https://market-super-frontend.netlify.app/"],
     methods:["GET" , "POST" , "PUT" , "DELETE"],
-    credentials:true //update form netlify
+    credentials:true //update form netlify ccept all the page
 }));
 app.use("/api",userRoutes);
 app.use("/auth",authRoutes);
