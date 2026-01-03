@@ -11,9 +11,9 @@ const app = express();
 //use middleware
 app.use(express.json());
 app.use(cors({
-    origin : ["https://project-supermarket.netlify.app/"],
-    methods:["GET" , "POST" , "PUT" , "DELETE"],
-    credentials:true //update form netlify ccept all the page
+    origin : "https://project-supermarket.netlify.app/",
+   // methods:["GET" , "POST" , "PUT" , "DELETE"],
+    //credentials:true //update form netlify ccept all the page
 }));
 app.use("/api",userRoutes);
 app.use("/auth",authRoutes);
